@@ -1,0 +1,1171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Poppins-Bold";
+  src: url(./fonts/Poppins-Bold.ttf);
+}
+@font-face {
+  font-family: "Poppins-Light";
+  src: url(./fonts/Poppins-Light.ttf);
+}
+@font-face {
+  font-family: "Poppins-Medium";
+  src: url(./fonts/Poppins-Medium.ttf);
+}
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url(./fonts/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: "Poppins-SemiBold";
+  src: url(./fonts/Poppins-SemiBold.ttf);
+}
+body {
+  max-width: 1920px;
+  overflow-x: hidden;
+}
+
+header {
+  background: linear-gradient(180deg, #262c5e 50%, rgb(14, 17, 45) 100%);
+}
+@media (min-width: 0) and (max-width: 460px) {
+  header {
+    background: linear-gradient(180deg, #262c5e 50%, rgb(14, 17, 45) 100%);
+    background-size: 460px;
+  }
+  header .characters {
+    margin-top: -90px;
+  }
+}
+@media (min-width: 0) and (max-width: 460px) and (min-width: 0) and (max-width: 460px) {
+  header .characters {
+    width: 379px;
+    height: 250px;
+  }
+}
+header .navbar {
+  padding: 0;
+}
+header .navbar .header__logo {
+  margin-top: 45px;
+  margin-left: 300.63px;
+  font-family: "Poppins-Bold";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 25px;
+  line-height: 32px;
+  color: #FFFFFF;
+}
+@media (min-width: 0) and (max-width: 460px) {
+  header .navbar .header__logo {
+    display: none;
+  }
+}
+header .navbar .header__logo span {
+  color: #18BAFF;
+}
+header .navbar .nav-buttons {
+  margin-right: 207.37px;
+  margin-top: 30px;
+}
+@media (min-width: 0) and (max-width: 460px) {
+  header .navbar .nav-buttons {
+    display: flex;
+    margin-left: 82px;
+  }
+}
+header .navbar .nav-buttons .to-telega {
+  font-family: "Poppins-Bold";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 18px;
+  color: #FFFFFF;
+  padding: 13px 22px 13px 23px;
+  background: rgba(86, 79, 255, 0.15);
+  border: 1px solid #564FFF;
+  border-radius: 5px;
+}
+header .navbar .nav-buttons .to-telega a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+header .navbar .nav-buttons .to-telega:hover {
+  background: rgb(86, 79, 255);
+  color: #FFFFFF;
+}
+header .navbar .nav-buttons .to-cabinet {
+  font-family: "Poppins-Bold", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  color: #FFFFFF;
+  padding: 13px 20px;
+  background: rgba(86, 79, 255, 0.15);
+  border: 1px solid #564FFF;
+  border-radius: 5px;
+  margin-left: 15px;
+}
+header .navbar .nav-buttons .to-cabinet a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+header .navbar .nav-buttons .to-cabinet:hover {
+  background: rgb(86, 79, 255);
+}
+header .header__menu {
+  margin-top: 137px;
+  margin-left: 300.63px;
+  display: flex;
+}
+@media (min-width: 0) and (max-width: 460px) {
+  header .header__menu {
+    display: flex;
+    flex-direction: column;
+    flex-direction: column-reverse;
+  }
+}
+header .header__menu .header__menu__info {
+  margin-right: 25px;
+}
+header .header__menu .header__menu__info h2 {
+  font-family: "Poppins-Bold";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 56px;
+  line-height: 72px;
+  color: #FFFFFF;
+}
+@media (min-width: 0) and (max-width: 460px) {
+  header .header__menu .header__menu__info h2 {
+    width: 363px;
+    font-family: "Poppins-Bold";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 34px;
+    line-height: 44px;
+    color: #FFFFFF;
+  }
+}
+header .header__menu .header__menu__info h2 span {
+  font-family: "Poppins-Bold";
+  background: linear-gradient(40deg, #18BAFF, #4500D9);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+header .header__menu .header__menu__info .menu__text {
+  font-family: "Poppins-Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #A7A7C8;
+}
+@media (min-width: 0) and (max-width: 460px) {
+  header .header__menu .header__menu__info .menu__text {
+    width: 369px;
+    height: 80px;
+    font-family: "Poppins-Medium";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+    color: #A7A7C8;
+  }
+}
+header .header__menu .header__menu__info .numbers {
+  margin-top: 26px;
+  display: flex;
+}
+header .header__menu .header__menu__info .numbers .number_16 {
+  font-family: "Poppins-Bold";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 46px;
+  color: #FFFFFF;
+  margin-right: 47px;
+}
+@media (min-width: 0) and (max-width: 460px) {
+  header .header__menu .header__menu__info .numbers .number_16 {
+    display: flex;
+    width: 150px;
+    height: 33px;
+    font-family: "Poppins-Bold";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 33px;
+    color: #FFFFFF;
+  }
+}
+header .header__menu .header__menu__info .numbers .number_3 {
+  margin-top: -0.5px;
+  font-family: "Poppins-Bold";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 46px;
+  color: #FFFFFF;
+}
+header .header__menu .header__menu__info .numbers__info {
+  margin-top: -13px;
+}
+header .header__menu .header__menu__info .numbers__info .nums__info1 {
+  margin-right: 120px;
+  font-family: "Poppins-SemiBold";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  background: linear-gradient(119.36deg, #18BAFF 19.35%, #4500D9 126.51%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+header .header__menu .header__menu__info .numbers__info .nums__info2 {
+  margin-top: -0.5px;
+  font-family: "Poppins-SemiBold";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  background: linear-gradient(119.36deg, #18BAFF 19.35%, #4500D9 126.51%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+header .header__menu .characters {
+  margin-top: -90px;
+}
+@media (min-width: 0) and (max-width: 460px) {
+  header .header__menu .characters {
+    width: 379px;
+    height: 250px;
+    left: 40px;
+    top: 107px;
+  }
+}
+header .header__footer__menu h1 {
+  margin-top: -30px;
+  font-family: "poppins-Bold";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 46px;
+  color: #FFFFFF;
+  margin-left: 664px;
+}
+header .header__footer__menu .header__footer__menu__cards {
+  display: flex;
+  margin-left: 302px;
+  gap: 26px;
+  margin-top: 54px;
+}
+header .header__footer__menu .header__footer__menu__cards .card__ingeneer {
+  background: linear-gradient(180deg, #13183f 27.07%, rgba(14, 21, 72, 0) 100%);
+  padding: 30px 55px 59px 34px;
+  margin-bottom: 88px;
+  transform: transition 500ms;
+  transition: 500ms;
+}
+header .header__footer__menu .header__footer__menu__cards .card__ingeneer img {
+  margin-top: -93px;
+}
+header .header__footer__menu .header__footer__menu__cards .card__ingeneer .ingeneers__text1 {
+  font-family: "Poppins-Bold";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 31px;
+  color: #FFFFFF;
+}
+header .header__footer__menu .header__footer__menu__cards .card__ingeneer .ingeneers__text2 {
+  font-family: "Poppins-Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #A7A7C8;
+}
+header .header__footer__menu .header__footer__menu__cards .card__ingeneer:hover {
+  cursor: pointer;
+  transition: 500ms;
+  transform: scale(90%);
+}
+header .header__footer__menu .header__footer__menu__cards .card__messager {
+  background: linear-gradient(180deg, #13183f 27.07%, rgba(14, 21, 72, 0) 100%);
+  padding: 30px 55px 59px 34px;
+  margin-bottom: 88px;
+  transform: transition 500ms;
+  transition: 500ms;
+}
+header .header__footer__menu .header__footer__menu__cards .card__messager img {
+  margin-top: -93px;
+}
+header .header__footer__menu .header__footer__menu__cards .card__messager .messagess__text1 {
+  font-family: "Poppins-Bold";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 31px;
+  color: #FFFFFF;
+}
+header .header__footer__menu .header__footer__menu__cards .card__messager .messagess__text2 {
+  font-family: "Poppins-Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #A7A7C8;
+}
+header .header__footer__menu .header__footer__menu__cards .card__messager:hover {
+  cursor: pointer;
+  transition: 500ms;
+  transform: scale(90%);
+}
+header .header__footer__menu .header__footer__menu__cards .card__brill {
+  background: linear-gradient(180deg, #13183f 27.07%, rgba(14, 21, 72, 0) 100%);
+  padding: 30px 55px 59px 34px;
+  margin-bottom: 88px;
+  transform: transition 500ms;
+  transition: 500ms;
+}
+header .header__footer__menu .header__footer__menu__cards .card__brill img {
+  margin-top: -93px;
+}
+header .header__footer__menu .header__footer__menu__cards .card__brill .olzhas__text1 {
+  font-family: "Poppins-Bold";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 31px;
+  color: #FFFFFF;
+}
+header .header__footer__menu .header__footer__menu__cards .card__brill .olzhas__text2 {
+  font-family: "Poppins-Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #A7A7C8;
+}
+header .header__footer__menu .header__footer__menu__cards .card__brill:hover {
+  cursor: pointer;
+  transition: 500ms;
+  transform: scale(90%);
+}
+
+section {
+  background: linear-gradient(180deg, #0E112D 50%, rgb(14, 17, 45) 100%);
+}
+section .first__section__text {
+  font-family: "Poppins-Bold";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 46px;
+  color: #FFFFFF;
+  margin-left: 743px;
+  padding-top: 60px;
+}
+section .section__right {
+  display: flex;
+}
+section .section__right .phones {
+  margin-left: 258px;
+  margin-right: 152px;
+  padding-top: 68px;
+}
+section .section__right .phones .lefterphone {
+  margin-top: -160px;
+  margin-right: -95px;
+}
+section .section__right .phones .leftphone {
+  margin-top: -38px;
+}
+section .section__right .Android__class {
+  margin-top: 93px;
+}
+section .section__right .Android__class .Android__functions .functions__text {
+  font-family: "Poppins-Bold";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 41px;
+  color: #FFFFFF;
+}
+section .section__right .Android__class .Android__functions .functions__text2 {
+  font-family: "Poppins-Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #A7A7C8;
+}
+section .section__right .Android__class .dop__functions {
+  margin-top: 21px;
+}
+section .section__right .Android__class .dop__functions .functions__text3 {
+  font-family: "Poppins-SemiBold";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+section .section__right .Android__class .dop__functions .functions__text4 {
+  font-family: "Poppins-Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #A7A7C8;
+}
+section .section__right .Android__class .dop__functions .functions__text4 a {
+  font-family: "Poppins-Bold";
+  color: #A7A7C8;
+}
+section .section__right .Android__class .button__function {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+section .section__right .Android__class .button__function .btn {
+  font-family: "Poppins-Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  color: #FFFFFF;
+  background: #564FFF;
+  border-radius: 5px;
+  padding: 15px 60px;
+}
+section .section__right .Android__class .button__function .btn a {
+  color: #FFFFFF;
+}
+section .section__right .Android__class .button__function p {
+  font-family: "Poppins-Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #A7A7C8;
+}
+section .section__right .Android__class .button__function p a {
+  color: #564FFF;
+}
+section .IOS .ios__class {
+  margin-top: 40px;
+  margin-left: 374px;
+}
+section .IOS .ios__class .ios__functions .functions__text5 {
+  font-family: "Poppins-Bold";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 41px;
+  color: #FFFFFF;
+}
+section .IOS .ios__class .ios__functions .functions__text6 {
+  font-family: "Poppins-Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #A7A7C8;
+}
+section .IOS .ios__class .dopol__functions .functions__text7 {
+  font-family: "Poppins-Bold";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 41px;
+  color: #FFFFFF;
+}
+section .IOS .ios__class .dopol__functions .functions__text8 {
+  font-family: "Poppins-Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #A7A7C8;
+}
+section .IOS .ios__class .buttons__functions {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+section .IOS .ios__class .buttons__functions .buy-second {
+  font-family: "Poppins-Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  color: #FFFFFF;
+  background: #564FFF;
+  border-radius: 5px;
+  padding: 15px 60px;
+}
+section .IOS .ios__class .buttons__functions .buy-second a {
+  color: #FFFFFF;
+}
+section .IOS .ios__class .buttons__functions p {
+  font-family: "Poppins-Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #A7A7C8;
+}
+section .IOS .ios__class .buttons__functions p a {
+  color: #564FFF;
+}
+section .IOS .iphones .i__right {
+  margin-left: -125px;
+}
+section .IOS .iphones .i__righter {
+  margin-left: -234px;
+}
+section .Tariphs .tariph__text {
+  margin-top: 90px;
+  margin-left: 809px;
+  font-family: "Poppins-Bold";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 46px;
+  color: #FFFFFF;
+}
+section .Tariphs .uk-subnav {
+  margin-left: 753px;
+}
+section .Tariphs .uk-subnav .btn {
+  color: #FFFFFF;
+}
+section .Tariphs .uk-subnav .btn a {
+  font-family: "Poppins-Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  color: #FFFFFF;
+  background: rgba(86, 79, 255, 0.25);
+  border: 1px solid #564FFF;
+  border-radius: 5px;
+  padding: 19px 59px 19px 57px;
+  text-transform: lowercase;
+}
+section .Tariphs .uk-subnav .btn a:hover {
+  background: #564FFF;
+  border: 1px solid #564FFF;
+  border-radius: 5px;
+}
+section .Tariphs .uk-subnav .uk-second {
+  color: #FFFFFF;
+}
+section .Tariphs .uk-subnav .uk-second a {
+  font-family: "Poppins-Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  color: #FFFFFF;
+  background: rgba(86, 79, 255, 0.25);
+  border: 1px solid #564FFF;
+  border-radius: 5px;
+  padding: 19px 73px;
+  text-transform: uppercase;
+}
+section .Tariphs .uk-subnav .uk-second a:hover {
+  background: #564FFF;
+  border: 1px solid #564FFF;
+  border-radius: 5px;
+}
+section .Tariphs .js-filter {
+  margin-left: 160px;
+  margin-top: 100px;
+}
+section .Tariphs .js-filter .uk-card {
+  background: linear-gradient(180deg, #1E2242 0%, rgba(30, 34, 66, 0) 100%);
+  border-radius: 5px;
+  padding: 0;
+  margin-left: 242px;
+  width: 338px;
+}
+section .Tariphs .js-filter .uk-card img {
+  margin-left: 160px;
+  margin-top: -120px;
+}
+section .Tariphs .js-filter .uk-card .white__text {
+  margin-top: 7px;
+  text-align: center;
+  font-family: "Poppins-Bold";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 39px;
+  color: #FFFFFF;
+}
+section .Tariphs .js-filter .uk-card .white__menu {
+  margin-left: -55px;
+  font-family: "Poppins-Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  color: #A7A7C8;
+  padding-left: 104px;
+}
+section .Tariphs .js-filter .uk-card .white__menu a {
+  color: #FFFFFF;
+}
+section .Tariphs .js-filter .uk-card .default__cost {
+  text-align: center;
+  margin-top: 52px;
+  font-family: "Poppins-Bold";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 46px;
+  color: #FFFFFF;
+}
+section .Tariphs .js-filter .uk-card .cost__hour {
+  text-align: center;
+  font-family: "Poppins-Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 21px;
+  color: #A7A7C8;
+}
+section .Tariphs .js-filter .uk-card .to__buy {
+  font-family: "Poppins-Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  background: linear-gradient(106.14deg, #18BAFF 20.27%, #564FFF 78.28%);
+  border-radius: 5px;
+  padding: 27px 85px 28px 85px;
+  transition: 400ms;
+}
+section .Tariphs .js-filter .uk-card .to__buy a {
+  color: #FFFFFF;
+}
+section .Tariphs .js-filter .uk-card .to__buy:hover {
+  background: linear-gradient(106.14deg, #564FFF 20.27%, #18BAFF 78.28%);
+  transition: 400ms;
+}
+section .Tariphs .js-filter .uk-card2 {
+  background: linear-gradient(180deg, #1E2242 0%, rgba(30, 34, 66, 0) 100%);
+  border-radius: 5px;
+  padding: 0;
+  margin-right: 233px;
+  width: 338px;
+  margin-left: 14px;
+  margin-bottom: 20px;
+}
+section .Tariphs .js-filter .uk-card2 img {
+  margin-left: 160px;
+  margin-top: -120px;
+}
+section .Tariphs .js-filter .uk-card2 .white__text2 {
+  margin-top: 7px;
+  text-align: center;
+  font-family: "Poppins-Bold";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 39px;
+  color: #FFB800;
+}
+section .Tariphs .js-filter .uk-card2 .white__menu2 {
+  margin-left: -55px;
+  font-family: "Poppins-Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  color: #A7A7C8;
+  padding-left: 104px;
+}
+section .Tariphs .js-filter .uk-card2 .white__menu2 a {
+  color: #FFB800;
+}
+section .Tariphs .js-filter .uk-card2 .default__cost2 {
+  text-align: center;
+  margin-top: 24px;
+  font-family: "Poppins-Bold";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 46px;
+  color: #FFFFFF;
+}
+section .Tariphs .js-filter .uk-card2 .cost__hour2 {
+  text-align: center;
+  font-family: "Poppins-Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 21px;
+  color: #FFB800;
+}
+section .Tariphs .js-filter .uk-card2 .to__buy2 {
+  font-family: "Poppins-Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  background: linear-gradient(106.14deg, #18BAFF 20.27%, #564FFF 78.28%);
+  border-radius: 5px;
+  padding: 27px 85px 28px 85px;
+}
+section .Tariphs .js-filter .uk-card2 .to__buy2 a {
+  color: #FFFFFF;
+}
+section .Tariphs .js-filter .uk-card2 .to__buy2:hover {
+  background: linear-gradient(106.14deg, #564FFF 20.27%, #18BAFF 78.28%);
+}
+section .Tariphs .js-filter .uk-card3 {
+  background: linear-gradient(180deg, #1E2242 0%, rgba(30, 34, 66, 0) 100%);
+  border-radius: 5px;
+  padding: 0;
+  margin-left: -214px;
+  margin-right: 200px;
+  width: 338px;
+}
+section .Tariphs .js-filter .uk-card3 .third__imgs {
+  display: flex;
+}
+section .Tariphs .js-filter .uk-card3 .third__imgs .andro {
+  margin-left: 130px;
+  margin-top: -98px;
+}
+section .Tariphs .js-filter .uk-card3 .third__imgs .ipho {
+  margin-left: 17px;
+  margin-top: -98px;
+}
+section .Tariphs .js-filter .uk-card3 .third__imgs .star {
+  position: absolute;
+  margin-left: 300px;
+  margin-top: -42px;
+}
+section .Tariphs .js-filter .uk-card3 .white__text3 {
+  background: linear-gradient(109.57deg, #FF2525 17.14%, #FF3636 81.72%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  margin-top: 30px;
+  text-align: center;
+  font-family: "Poppins-Bold";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 39px;
+  color: #FFFFFF;
+}
+section .Tariphs .js-filter .uk-card3 .white__menu3 {
+  margin-top: -3px;
+  margin-left: -55px;
+  font-family: "Poppins-Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  color: #A7A7C8;
+  padding-left: 104px;
+}
+section .Tariphs .js-filter .uk-card3 .white__menu3 a {
+  color: #FFFFFF;
+  background: linear-gradient(109.57deg, #FF2525 17.14%, #FF3636 81.72%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+section .Tariphs .js-filter .uk-card3 .default__cost3 {
+  text-align: center;
+  margin-top: -10px;
+  font-family: "Poppins-Bold";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 46px;
+  color: #FFFFFF;
+}
+section .Tariphs .js-filter .uk-card3 .cost__hour3 {
+  margin-top: -10px;
+  text-align: center;
+  font-family: "Poppins-Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 21px;
+  color: #A7A7C8;
+  background: linear-gradient(109.57deg, #FF2525 17.14%, #FF3636 81.72%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+section .Tariphs .js-filter .uk-card3 .to__buy3 {
+  font-family: "Poppins-Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  background: linear-gradient(106.14deg, #18BAFF 20.27%, #564FFF 78.28%);
+  border-radius: 5px;
+  padding: 27px 85px 28px 85px;
+}
+section .Tariphs .js-filter .uk-card3 .to__buy3 a {
+  color: #FFFFFF;
+}
+section .Tariphs .js-filter .uk-card3 .to__buy3:hover {
+  background: linear-gradient(106.14deg, #564FFF 20.27%, #18BAFF 78.28%);
+}
+section .Tariphs .js-filter .uk-card7 {
+  background: linear-gradient(180deg, #1E2242 0%, rgba(30, 34, 66, 0) 100%);
+  border-radius: 5px;
+  padding: 0;
+  margin-left: -338px;
+  width: 338px;
+}
+section .Tariphs .js-filter .uk-card7 img {
+  margin-left: 160px;
+  margin-top: -120px;
+}
+section .Tariphs .js-filter .uk-card7 .blue__text {
+  margin-top: 7px;
+  text-align: center;
+  font-family: "Poppins-Bold";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 39px;
+  color: #FFFFFF;
+}
+section .Tariphs .js-filter .uk-card7 .blue__menu {
+  margin-left: -55px;
+  font-family: "Poppins-Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  color: #A7A7C8;
+  padding-left: 104px;
+}
+section .Tariphs .js-filter .uk-card7 .blue__menu a {
+  color: #FFFFFF;
+}
+section .Tariphs .js-filter .uk-card7 .default__costb {
+  text-align: center;
+  margin-top: 52px;
+  font-family: "Poppins-Bold";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 46px;
+  color: #FFFFFF;
+}
+section .Tariphs .js-filter .uk-card7 .cost__hourb {
+  text-align: center;
+  font-family: "Poppins-Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 21px;
+  color: #A7A7C8;
+}
+section .Tariphs .js-filter .uk-card7 .to__buyb {
+  font-family: "Poppins-Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  background: linear-gradient(106.14deg, #18BAFF 20.27%, #564FFF 78.28%);
+  border-radius: 5px;
+  padding: 27px 85px 28px 85px;
+}
+section .Tariphs .js-filter .uk-card7 .to__buyb a {
+  color: #FFFFFF;
+}
+section .Tariphs .js-filter .uk-card7 .to__buyb:hover {
+  background: linear-gradient(106.14deg, #564FFF 20.27%, #18BAFF 78.28%);
+}
+section .Tariphs .js-filter .uk-card8 {
+  background: linear-gradient(180deg, #1E2242 0%, rgba(30, 34, 66, 0) 100%);
+  border-radius: 5px;
+  padding: 0;
+  margin-right: 233px;
+  width: 338px;
+  margin-left: -566px;
+}
+section .Tariphs .js-filter .uk-card8 img {
+  margin-left: 160px;
+  margin-top: -120px;
+}
+section .Tariphs .js-filter .uk-card8 .blue__text2 {
+  margin-top: 7px;
+  text-align: center;
+  font-family: "Poppins-Bold";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 39px;
+  color: #FFB800;
+}
+section .Tariphs .js-filter .uk-card8 .blue__menu2 {
+  margin-left: -55px;
+  font-family: "Poppins-Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  color: #A7A7C8;
+  padding-left: 104px;
+}
+section .Tariphs .js-filter .uk-card8 .blue__menu2 a {
+  color: #FFB800;
+}
+section .Tariphs .js-filter .uk-card8 .default__costb2 {
+  text-align: center;
+  margin-top: 24px;
+  font-family: "Poppins-Bold";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 46px;
+  color: #FFFFFF;
+}
+section .Tariphs .js-filter .uk-card8 .cost__hourb2 {
+  text-align: center;
+  font-family: "Poppins-Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 21px;
+  color: #FFB800;
+}
+section .Tariphs .js-filter .uk-card8 .to__buyb2 {
+  font-family: "Poppins-Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  background: linear-gradient(106.14deg, #18BAFF 20.27%, #564FFF 78.28%);
+  border-radius: 5px;
+  padding: 27px 85px 28px 85px;
+}
+section .Tariphs .js-filter .uk-card8 .to__buyb2 a {
+  color: #FFFFFF;
+}
+section .Tariphs .js-filter .uk-card8 .to__buyb2:hover {
+  background: linear-gradient(106.14deg, #564FFF 20.27%, #18BAFF 78.28%);
+}
+section .Tariphs .js-filter .uk-card9 {
+  background: linear-gradient(180deg, #1E2242 0%, rgba(30, 34, 66, 0) 100%);
+  border-radius: 5px;
+  padding: 0;
+  width: 338px;
+  margin-top: -506px;
+  margin-left: 943px;
+}
+section .Tariphs .js-filter .uk-card9 .third__imgs {
+  display: flex;
+}
+section .Tariphs .js-filter .uk-card9 .third__imgs .andro {
+  margin-left: 130px;
+  margin-top: -98px;
+}
+section .Tariphs .js-filter .uk-card9 .third__imgs .ipho {
+  margin-left: 17px;
+  margin-top: -98px;
+}
+section .Tariphs .js-filter .uk-card9 .third__imgs .star {
+  position: absolute;
+  margin-left: 300px;
+  margin-top: -42px;
+}
+section .Tariphs .js-filter .uk-card9 .blue__text3 {
+  background: linear-gradient(109.57deg, #FF2525 17.14%, #FF3636 81.72%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  margin-top: 30px;
+  text-align: center;
+  font-family: "Poppins-Bold";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 39px;
+  color: #FFFFFF;
+}
+section .Tariphs .js-filter .uk-card9 .blue__menu3 {
+  margin-top: -3px;
+  margin-left: -55px;
+  font-family: "Poppins-Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  color: #A7A7C8;
+  padding-left: 104px;
+}
+section .Tariphs .js-filter .uk-card9 .blue__menu3 a {
+  color: #FFFFFF;
+  background: linear-gradient(109.57deg, #FF2525 17.14%, #FF3636 81.72%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+section .Tariphs .js-filter .uk-card9 .default__costb3 {
+  text-align: center;
+  margin-top: -10px;
+  font-family: "Poppins-Bold";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 46px;
+  color: #FFFFFF;
+}
+section .Tariphs .js-filter .uk-card9 .cost__hourb3 {
+  margin-top: -10px;
+  text-align: center;
+  font-family: "Poppins-Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 21px;
+  color: #A7A7C8;
+  background: linear-gradient(109.57deg, #FF2525 17.14%, #FF3636 81.72%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+section .Tariphs .js-filter .uk-card9 .to__buyb3 {
+  font-family: "Poppins-Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  background: linear-gradient(106.14deg, #18BAFF 20.27%, #564FFF 78.28%);
+  border-radius: 5px;
+  padding: 27px 85px 28px 85px;
+}
+section .Tariphs .js-filter .uk-card9 .to__buyb3 a {
+  color: #FFFFFF;
+}
+section .Tariphs .js-filter .uk-card9 .to__buyb3:hover {
+  background: linear-gradient(106.14deg, #564FFF 20.27%, #18BAFF 78.28%);
+}
+section .questions {
+  margin-top: 103px;
+}
+section .questions .questions__text {
+  font-family: "Poppins-Bold";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 46px;
+  color: #FFFFFF;
+  margin-left: 701px;
+}
+section .questions .uk-container {
+  padding-bottom: 82px;
+  margin-top: 43px;
+}
+section .questions .uk-container .uk-open {
+  background: linear-gradient(180deg, #1E2242 0%, #1E2242 100%);
+  border-radius: 5px;
+  padding: 31px 0 31px 34px;
+}
+section .questions .uk-container .uk-open .uk-accordion-title {
+  font-family: "Poppins-Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  background: linear-gradient(180deg, #1E2242 0%, #1E2242 100%);
+  border-radius: 5px;
+}
+section .questions .uk-container .uk-open .uk-accordion-content {
+  font-family: "Poppins-Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #A7A7C8;
+  background: linear-gradient(180deg, #1E2242 0%, #1E2242 100%);
+  border-radius: 5px;
+}
+section .questions .uk-container .uk-accordion-title {
+  font-family: "Poppins-Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+section .section__footer .btn {
+  font-family: "Poppins-Bold";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 18px;
+  color: #FFFFFF;
+  background: #564FFF;
+  border: 1px solid #564FFF;
+  border-radius: 5px;
+  padding: 12px 22px 12px 23px;
+  margin-left: 886px;
+}
+section .section__footer .logos {
+  margin-top: 37px;
+  margin-left: 802px;
+}
+section .section__footer .logos img {
+  margin-right: 33px;
+}
+section .section__footer .logos img:hover {
+  color: #FFFFFF;
+  cursor: pointer;
+}
+section .section__footer .final__text {
+  font-family: "Poppins-Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: #676B8B;
+  padding-bottom: 120px;
+}
+section .uk-button {
+  background: #564FFF;
+  border-radius: 50%;
+  padding: 3px 12px 3px 12px;
+  margin-top: -270px;
+  margin-left: 1700px;
+}/*# sourceMappingURL=style.css.map */
